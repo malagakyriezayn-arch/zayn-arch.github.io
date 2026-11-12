@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Douze Studio · Scoreboard Simulator</title>
+<meta name="description" content="Set the points of every jury and the televote, then watch your own Eurovision-style scoreboard reveal play out.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/styles.css">
+</head><body>
+<div class="app-shell">
+<div id="su">
+<nav class="site-navigation" id="tb" aria-label="Setup" style="--i:0"><span class="nav-pill" aria-hidden="true"></span><button data-t="c">Countries<i id="n_c"></i></button><button data-t="j">Juries<i id="n_j"></i></button><button data-t="t">Televote<i id="n_t"></i></button><button data-t="o">Order</button><button data-t="z">Customize</button></nav>
+<main class="wrap">
+<header class="hero"><span class="tag">SCOREBOARD SIMULATOR</span><h1>Simulator<span>.</span></h1><p class="mut" id="sub"></p></header>
+<section class="pn" id="p_c"></section><section class="pn" id="p_j"></section><section class="pn" id="p_t"></section><section class="pn" id="p_o"></section><section class="pn" id="p_z"></section>
+<div class="ctl"><button class="pri" id="play">Play the show</button><button id="fill">Fill randomly</button><button id="clr">Clear all</button></div>
+<p class="mut" id="chk"></p>
+<p class="mut">Tip: on a phone, turn it sideways or tap full screen to see the whole 16:9 stage. Everything is saved on this device.</p>
+<footer class="foot">Douze Studio · an unofficial fan project</footer>
+</main></div>
+<div id="sh" hidden>
+<div id="stg"><div id="hd"></div><div id="rows"></div><div id="pn"></div><div id="cd"></div></div>
+<div class="ctl"><button id="pp">⏸ Pause</button><button id="sk">⏭ Skip this vote</button><button id="fs">⛶ Full screen</button><button id="ex2">← Back to setup</button></div>
+</div></div>
+<script src="js/state.js"></script>
+<script src="js/setup.js"></script>
+<script src="js/show.js"></script>
+<script src="js/events.js"></script>
+</body></html>
